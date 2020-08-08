@@ -7,7 +7,7 @@ def find_min(a, b, c):
     if b % c == 0:
         return 1 + find_min(a, b // c, c)
     else:
-        x = (b//c + 1) * c
+        x = (b//c + 1) *c
         return (ceil((x-b) / 2) + find_min(a, x, c))
 
 
